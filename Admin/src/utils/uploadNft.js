@@ -40,23 +40,3 @@ export const storeAsset = async (
 
   // console.log(`${name}: ${metadata.url}`)
 };
-
-// {
-//   "description": "This is the new Apple iPhone 12 with extra and astonishing new feautures",
-//   "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png",
-//   "name": "Flipkart Warranty Apple iPhone 12",
-//   "attributes": [
-//       {
-//           "price": "$999"
-//       },
-//       {
-//           "boughtAt": "Thu, 21 Jul 2022"
-//       },
-//       {
-//           "retailerId": "62dd1695fe702a25e7766fa9"
-//       },
-//       {
-//           "uniqueId": "bbd17bd5605008c72c8e044a1157846f77b8b82c"
-//       }
-//   ]
-// }

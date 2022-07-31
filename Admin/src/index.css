@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -27,7 +27,6 @@
 }
 .connect-btn {
   position: relative;
-
 }
 .connect-btn > div:nth-child(1) {
   cursor: pointer;
@@ -253,7 +252,7 @@
 .product-text p {
   padding-right: 5%;
   text-align: left;
-  font-family: "Play";
+  font-family: 'Play';
 
   font-weight: 400;
   font-size: 19.3536px;
@@ -266,7 +265,7 @@
 .product-text p span {
   font-size: 16.3536px;
   color: rgba(0, 0, 0, 0.6);
-  font-family: "Play";
+  font-family: 'Play';
 }
 .price-product {
   margin-bottom: 30px;
@@ -747,7 +746,8 @@
   margin-top: 50px;
 }
 .admin-product-open-order-inner {
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .admin-product-open-order-img > img {
   width: 16vw;
@@ -768,7 +768,9 @@
   margin-bottom: 10px;
 }
 .admin-product-open-order-details {
-  margin-top: 70px;position: relative;left: -50px;
+  margin-top: 70px;
+  position: relative;
+  left: -50px;
   transform: scale(0.94);
 }
 .admin-product-open-order-details p {
@@ -812,54 +814,96 @@
   left: -400px;
 }
 .admin-product-open-order-details .connect-btn {
-  width: 240px;position: relative;top: 10px;margin-bottom: 10px;
+  width: 240px;
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
 }
-.lottie-loader{width: 15vw;display: flex;justify-content: center;align-items: center;margin: 0 auto;margin-top: 120px;}
-.admin-product-open-order-img .connect-btn svg{width: 185px; }
-.admin-product-open-order-img .connect-btn{width: 181px;margin-top: 20px;}
+.lottie-loader {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.admin-product-open-order-img .connect-btn svg {
+  width: 185px;
+}
+.admin-product-open-order-img .connect-btn {
+  width: 181px;
+  margin-top: 20px;
+}
 /* .admin-product-open-order-img input{
   background-color: transparent;width: 180px;height: 52px; border: 1px solid #000;
 } */
-.admin-product-open-order-img label{
-  border: 1px solid #000 !important;    min-width: 270px; 
+.admin-product-open-order-img label {
+  border: 1px solid #000 !important;
+  min-width: 270px;
   height: 65px;
   margin-top: 30px;
-
 }
-.admin-product-open-order-img label>div{
-  flex-direction: column !important;height: 45px;justify-content: space-between;padding-left: 5px;
+.admin-product-open-order-img label > div {
+  flex-direction: column !important;
+  height: 45px;
+  justify-content: space-between;
+  padding-left: 5px;
 }
-.absolute-img-text{position: absolute;bottom: 50px;left:300px}
-.nfts-page{
-  margin-top: 148px;margin-left: 20%;
-} 
-.nft-list{width: 90%; margin: 0 auto; display: flex;justify-content: space-between;margin-top: 40px;flex-wrap: wrap;}
-.nft-list-img img{width: 300px;}
-.nfts-page h1{
-  font-weight: 400;
-    font-size: 32.2657px;margin-top: 60px;
+.absolute-img-text {
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
 }
-.nfts-page{position: relative;top: 50px;}
-.modal-text{
-  font-weight: 400;
-    font-size: 22.2657px;margin-bottom: 40px;
+.nfts-page {
+  margin-top: 148px;
+  margin-left: 20%;
 }
-.nft-modal-list{
-  display: flex;overflow-x: scroll;flex-wrap: wrap;
+.nft-list {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
-.nft-modal-img img{
+.nft-list-img img {
   width: 300px;
 }
-.modal-content{
+.nfts-page h1 {
+  font-weight: 400;
+  font-size: 32.2657px;
+  margin-top: 60px;
+}
+.nfts-page {
+  position: relative;
+  top: 50px;
+}
+.modal-text {
+  font-weight: 400;
+  font-size: 22.2657px;
+  margin-bottom: 40px;
+}
+.nft-modal-list {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+}
+.nft-modal-img img {
+  width: 300px;
+}
+.modal-content {
   overflow: scroll;
 }
 
-.modal-input{
-  font-weight: 400;border: 1px solid #000;padding: 5px;width: 100%;height: 42px;
+.modal-input {
+  font-weight: 400;
+  border: 1px solid #000;
+  padding: 5px;
+  width: 100%;
+  height: 42px;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.button-holder .connect-btn{
+.button-holder .connect-btn {
   width: 200px;
-
 }

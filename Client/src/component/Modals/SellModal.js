@@ -1,10 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Button from "./Button"; 
+import Button from "../Button"; 
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
-import { BasicContext } from "../context/BasicContext";
+import { ToastContainer } from 'react-toastify';
+import { BasicContext } from "../../context/BasicContext";
+import {successToast, errorToast} from "../../utils/toast";
 
 const style = {
   position: "absolute",
@@ -28,56 +29,24 @@ const SellModal = (props) => {
   const handleSell = () => {
     console.log(token, address);
     if(address.length != 42){
-        // alert("Please enter valid address");
-
-        toast.error("Please enter valid address", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
+        errorToast("Please enter valid address");
     }
     else{
       
         sellNFT(token, address).then((res) => {
-          toast.success("Warranty Sold Succesfully", {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+            successToast("Warranty sold successfully");
             console.log(res);
             setOpen(false);
             setParentModal(false);
         }).catch((err) => {
-          toast.error("Error Occured", {
-            position: "bottom-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
+            errorToast("Error in selling warranty");
+            console.log(err);
         })
     }
   };
 
   return (
     <>
-   {/* <button onClick={notify}>Notify!</button> */}
-   <ToastContainer
-          position="bottom-right"
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
     <Modal
       open={open}
       onClose={() => setOpen(false)}

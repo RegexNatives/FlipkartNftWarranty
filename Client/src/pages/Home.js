@@ -154,36 +154,6 @@ const Home = () => {
           <img src={Cards} alt="" />
         </div>
       </div>
-      {/* <div className="landing-3-section">
-        <div className="landing-3-heading">
-          <h1>WARRANTY TO YOUR PRODUCTS lorem ipsulm</h1>
-          <p>
-            WARRANTY TO YOUR PRODUCTS lorem ipsulm WARRANTY TO YOUR PRODUCTS
-            lorem ipsulm WARRANTY TO YOUR PRODUCTS lorem ipsulm TO YOUR PRODUCTS
-            lorem ipsulm{" "}
-          </p>
-        </div>
-        <div className="landing-3-2sections">
-          <div className="landing-3-section-1">
-            <h1>WARRANTY TO YOUR PRODUCTS</h1>
-            <p>
-              WARRANTY TO YOUR PRODUCTS lorem ipsulm WARRANTY TO YOUR PRODUCTS
-              lorem ipsulm WARRANTY TO YOUR PRODUCTS lorem ipsulm TO YOUR
-              PRODUCTS lorem ipsulm{" "}
-            </p>
-            <img src={Nft1} alt="" />
-          </div>
-          <div className="landing-3-section-2">
-            <h1>WARRANTY TO YOUR PRODUCTS</h1>
-            <p>
-              WARRANTY TO YOUR PRODUCTS lorem ipsulm WARRANTY TO YOUR PRODUCTS
-              lorem ipsulm WARRANTY TO YOUR PRODUCTS lorem ipsulm TO YOUR
-              PRODUCTS lorem ipsulm{" "}
-            </p>
-            <img src={Nft2} alt="" />
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

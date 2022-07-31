@@ -1,10 +1,9 @@
 import React, { useEffect, useState, createContext, useContext } from "react";
 import { ethers } from "ethers";
 import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer, toast } from 'react-toastify';
-import { axios } from "axios";
 import { getAllOrders } from "../api/orders";
 import { contractABI, contractAddress } from "../utils/warranty";
+import { errorToast } from "../utils/toast";
 const { ethereum } = window;
 export const BasicContext = createContext();
 const createEthereumContract = () => {
@@ -20,7 +19,6 @@ export const ContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [orders, setOrders] = useState([
   ]);
-  const [error,setError] = useState(null);
 
 
   useEffect(() => {
@@ -52,7 +50,7 @@ export const ContextProvider = ({ children }) => {
     },
   };
 
-  const changeNetwork = async ({ networkName, setError }) => {
+  const changeNetwork = async ({ networkName }) => {
     try {
       if (!window.ethereum) throw new Error("No crypto wallet found");
       await window.ethereum.request({
@@ -64,7 +62,6 @@ export const ContextProvider = ({ children }) => {
         ],
       });
     } catch (err) {
-      setError(err.message);
       alert(err.message);
     }
   };
@@ -82,7 +79,7 @@ export const ContextProvider = ({ children }) => {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const { chainId } = await provider.getNetwork();
         if (chainId != 80001) {
-          await changeNetwork({networkName: 'polygon', setError});
+          await changeNetwork({networkName: 'polygon'});
         }
 
 
@@ -106,16 +103,7 @@ export const ContextProvider = ({ children }) => {
         return NFTs;
       }
       else{
-        // alert("Error in wallet connection!");
-        toast.error("Error in wallet connection!", {
-          position: "bottom-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        })
+        errorToast("Error in wallet connection!");
 
       }
     }
