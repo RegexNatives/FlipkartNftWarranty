@@ -1,0 +1,79 @@
+{
+  "name": "nftwarranty",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@metamask/detect-provider": "^1.2.0",
+    "@mui/material": "^5.9.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.0.0",
+    "axios": "^0.27.2",
+    "browserify-fs": "^1.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "crypto-hash": "^2.0.1",
+    "docx": "^7.4.1",
+    "dom-to-image": "^2.6.0",
+    "ethers": "^5.6.9",
+    "formik": "^2.2.9",
+    "https": "^1.0.0",
+    "https-browserify": "^1.0.0",
+    "mime": "^3.0.0",
+    "net-browserify": "^0.2.4",
+    "node-fs": "^0.1.7",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react": "^18.2.0",
+    "react-component-export-image": "^1.0.6",
+    "react-dom": "^18.2.0",
+    "react-drag-drop-files": "^2.3.7",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^8.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.7",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "tls-browserify": "^0.2.2",
+    "url": "^0.11.0",
+    "util": "^0.12.4",
+    "vanta": "^0.5.22",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "dev": "PORT=4500 react-scripts start",
+    "start": "PORT=4500 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
