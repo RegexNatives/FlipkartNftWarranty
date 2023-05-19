@@ -1,11 +1,8 @@
 
-# Flipkart Grid 4.0 project
-
 This is an NFT-based E-Commerce store that verifies the authenticity of a product using the WarrantyNFT tokens. Users will receive a secure warranty card linked to their Metamask wallet.
 
 ## Authors
 
-- [@dhairyamarwah](https://www.github.com/dhairyamarwah)
 - [@vansh10patpatia](https://www.github.com/vansh10patpatia)
 - [@prakhar011](https://www.github.com/prakhar011)
 
@@ -84,10 +81,6 @@ To run this project, you will need to add the following environment variables to
 
 ## Support
 
-For support, email dhairyamarwah01@gmail.com , vansh10patpatia@gmail.com , prakhar.awasthi.cse24@gmail.com .
+For support, email vansh10patpatia@gmail.com , prakhar.awasthi.cse24@gmail.com .
 
-
-## Feedback
-
-If you have any feedback, please reach out to us at dhairyamarwah01@gmail.com
 
